@@ -1,0 +1,24 @@
+<!--
+  Generated template for the NetworkDetailActivePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar *navbar>
+    <button dark primary small (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+      Back
+    </button>
+  <ion-title>{{network.Id}}</ion-title>
+</ion-navbar>
+
+<ion-content padding class="network-detail-active">
+  <ion-card>
+    <ion-card-header>Market Data</ion-card-header>
+    <ion-card-content>
+      <ion-note item-left>Data:</ion-note>
+      <ion-note item-left></ion-note>
+      <ion-note item-right>{{data?.day_high}}</ion-note>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
