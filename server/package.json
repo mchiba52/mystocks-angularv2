@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.0.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-nodemon": "^2.0.6",
+    "jshint-stylish": "^2.2.0",
+    "wiredep": "^4.0.0"
   }
 }
