@@ -12,11 +12,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "public/lib",
+    "public/books/lib",
     "test",
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "ejs": "^1.0.0"
   }
 }
