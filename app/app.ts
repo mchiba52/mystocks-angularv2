@@ -6,10 +6,10 @@ import {UserData} from './providers/user-data';
 import {TabsPage} from './pages/tabs/tabs';
 import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
-import {TutorialPage} from './pages/tutorial/tutorial';
 import {AboutPage} from './pages/about/about';
-import {NetworkListPage} from './pages/network-list/network-list'
-
+import {StockListPage} from './pages/stock-list/stock-list'
+import {enableProdMode} from 'angular2/core';
+enableProdMode();
 
 interface PageObj {
   title: string;
@@ -33,16 +33,16 @@ class ConferenceApp {
   // the login page disables the left menu
   appPages: PageObj[] = [
     { title: 'About', component: AboutPage, icon: 'information-circle' },
-    { title: 'Network List', component: NetworkListPage, icon: 'list' },
+    { title: 'My Stocks', component: StockListPage, icon: 'list' },
   ];
   loggedInPages: PageObj[] = [
-    { title: 'Logout', component: TabsPage, icon: 'log-out' }
+    { title: 'Logout', component: AboutPage, icon: 'log-out' }
   ];
   loggedOutPages: PageObj[] = [
     { title: 'Login', component: LoginPage, icon: 'log-in' },
     { title: 'Signup', component: SignupPage, icon: 'person-add' }
   ];
-  rootPage: any = AboutPage;
+  rootPage: any = LoginPage;
   loggedIn = false;
 
   constructor(

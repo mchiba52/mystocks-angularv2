@@ -15,6 +15,12 @@ $toolbar-md-background:                   color($colors, primary) !default;
 $toolbar-md-text-color:                   #fff !default;
 $toolbar-md-active-color:                 #fff !default;
 $toolbar-md-inactive-color:               #fff !default;
+// Use the default background for the tabbar since it inherits from toolbar
+$tabbar-md-background:                    #f8f8f8;
+
+// Change the color of the tabs text
+$tab-button-md-active-color:              color($colors, primary);
+$tab-button-md-inactive-color:            #8c8c8c;
 
 $segment-button-md-text-color-activated:  #fff !default;
 

@@ -11,7 +11,7 @@
       <ion-list-header>
         Navigate
       </ion-list-header>
-      <button ion-item menuClose *ngFor="#p of appPages" (click)="openPage(p)">
+      <button ion-item menuClose *ngFor="#p of appPages" (click)="openPage(p)" danger>
         <ion-icon item-left [name]="p.icon"></ion-icon>
         {{p.title}}
       </button>
